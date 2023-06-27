@@ -15,6 +15,10 @@ document.querySelectorAll(".nav-link").forEach((l) =>
   })
 );
 
+function scrolltoTop() {
+  window.scrollTo(0, 0);
+}
+
 const openHome = () => {
   let openH = window.open("index.html", "_self");
   console.log("Opened Home: " + openH);
