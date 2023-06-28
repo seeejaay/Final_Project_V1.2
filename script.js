@@ -64,5 +64,26 @@ const openYoutube = () => {
 };
 
 const openJhelly = () => {
-  let openY = window.open("https://jhellydraws.netlify.app", "_blank");
+  let openJ = window.open("https://jhellydraws.netlify.app", "_blank");
+};
+
+const openImg = () => {
+  let openI = window.open(
+    "https://www.freepik.com/free-vector/e-business-cards-with-electronic-devices_757579.htm#query=apps%20design%20svg&position=0&from_view=keyword&track=ais",
+    "_blank"
+  );
+};
+
+const openImg2 = () => {
+  let openImg2 = window.open(
+    "https://www.freepik.com/free-vector/new-app-development-desktop_10276612.htm#query=web%20development&position=8&from_view=search&track=ais",
+    "_blank"
+  );
+};
+
+const openImg3 = () => {
+  let openImg3 = window.open(
+    "https://www.freepik.com/free-vector/animation-concept-illustration_14665182.htm#query=motion%20graphics&position=8&from_view=search&track=ais",
+    "_blank"
+  );
 };

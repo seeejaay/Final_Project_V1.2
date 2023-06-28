@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  --lightblack: #232528;
+  --aliceblue: #e4effc;
+  --yellow: #ffa600;
+  --bluewish: #0d59ff;
+  --gray: #c9c9c9;
+  scrollbar-color: var(--lightblack) var(--gray);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--gray);
+}
+.contact {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 3rem 0;
+  cursor: pointer;
+}
+.contact a i {
+  font-size: 64px;
+  color: var(--lightblack);
+  transition: 0.6s ease;
+}
+.contact a i:hover {
+  color: var(--yellow);
+}
+
+@media (max-width: 768px) {
+  .contact a i {
+    font-size: 40px;
+  }
+}

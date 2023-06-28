@@ -281,7 +281,6 @@ footer {
     top: 70px;
     gap: 0;
     width: 100%;
-
     flex-direction: column;
     background-color: var(--lightblack);
     text-align: center;

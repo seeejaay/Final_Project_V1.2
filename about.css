@@ -73,6 +73,7 @@
   height: auto;
   border-radius: 20px;
   box-shadow: 0px 1px 10px 1px #232528;
+  cursor: pointer;
 }
 .content .content-second {
   display: flex;
