@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  --lightblack: #232528;
+  --aliceblue: #e4effc;
+  --yellow: #ffa600;
+  --bluewish: #0d59ff;
+  --gray: #c9c9c9;
+  scrollbar-color: var(--lightblack) var(--gray);
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .content {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+.content .content-first {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.content-first .content-left {
+  width: 40%;
+  padding: 10px 20px;
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+.content-first .content-right {
+  width: 40%;
+  max-width: 400px;
+  padding: 10px 20px;
+  transition: 0.5s ease;
+}
+
+.content-first .content-left h3,
+.content-second .content-right h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: var(--bluewish);
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+
+.content-first .content-left p,
+.content-second .content-right p {
+  margin: 30px 0;
+  line-height: 30px;
+}
+
+.content-first img,
+.content-second img {
+  width: 90%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0px 1px 10px 1px #232528;
+}
+.content .content-second {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.content-second .content-left {
+  width: 40%;
+  padding: 10px 20px;
+  text-align: center;
+  transition: 0.5s ease;
+}
+.content-second .content-right {
+  width: 40%;
+  max-width: 400px;
+  padding: 10px 20px;
+  transition: 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  .container .content-first {
+    flex-direction: column;
+  }
+  .container .content-second {
+    flex-direction: column-reverse;
+  }
+  .content .content-left,
+  .content .content-right {
+    width: 100%;
+  }
+
+  .content-second .content-right {
+    margin-top: 50px;
+  }
+  .content-right img {
+    position: relative;
+    left: 15px;
+  }
+}
