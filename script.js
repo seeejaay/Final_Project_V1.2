@@ -29,7 +29,7 @@ const openAbout = () => {
   console.log("Opened About: " + openA);
 };
 
-const openGallert = () => {
+const openGallery = () => {
   let openG = window.open("gallery.html", "_self");
   console.log("Opened Gallery: " + openG);
 };

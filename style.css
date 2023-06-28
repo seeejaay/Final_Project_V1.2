@@ -59,7 +59,9 @@ header {
 .nav-link:hover {
   color: var(--yellow);
 }
-
+.nav-item.active {
+  color: var(--yellow);
+}
 .hamburger {
   display: none;
   cursor: pointer;
@@ -87,34 +89,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.typewriter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 18%;
-}
-.typewriter h1 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  margin: 20px 0;
-  transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
-  animation: typing 4s steps(20, end) forwards;
-
-  overflow: hidden;
-  white-space: nowrap;
-  position: inherit;
-}
-.typewriter h1::after {
-  position: absolute;
-  display: block;
-  width: 4px;
-
-  background: #ffa600;
-  right: 0;
-  top: 0;
-  animation: cursor 1000ms infinite;
 }
 .bx {
   font-size: 30px;
