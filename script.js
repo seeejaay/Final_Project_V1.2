@@ -15,9 +15,9 @@ document.querySelectorAll(".nav-link").forEach((l) =>
   })
 );
 
-function scrolltoTop() {
+const scrolltoTop = () => {
   window.scrollTo(0, 0);
-}
+};
 
 const openHome = () => {
   let openH = window.open("index.html", "_self");

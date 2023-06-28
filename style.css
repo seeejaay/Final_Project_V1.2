@@ -133,8 +133,8 @@ header {
   justify-content: center;
   align-items: center;
   margin: 30px 0;
-
   width: 100%;
+  animation: content-load 0.6s ease-in;
 }
 .content .intro h1 {
   font-size: 64px;
@@ -176,6 +176,7 @@ header {
   border: none;
   color: var(--gray);
   transition: 0.3s;
+  cursor: pointer;
 }
 .intro .btn-group button:hover {
   background-color: #ffa600;
@@ -216,8 +217,11 @@ footer {
   justify-content: center;
   align-items: center;
   margin: 1rem 0 3rem 0;
+  cursor: pointer;
 }
-
+.socials a i:hover {
+  color: var(--yellow);
+}
 .socials li {
   margin: 0 10px;
 }
@@ -360,5 +364,16 @@ footer {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes content-load {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
