@@ -62,3 +62,7 @@ const openGithub = () => {
 const openYoutube = () => {
   let openY = window.open("https://www.youtube.com/@managerd4385", "_blank");
 };
+
+const openJhelly = () => {
+  let openY = window.open("https://jhellydraws.netlify.app", "_blank");
+};
