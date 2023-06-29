@@ -253,9 +253,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  header {
-    width: 100%;
-  }
   .hamburger {
     display: block;
   }
@@ -276,8 +273,6 @@ footer {
   }
   .navbar {
     justify-content: space-between;
-    width: 100%;
-    position: fixed;
   }
   .bx {
     font-size: 50px;
