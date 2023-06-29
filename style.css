@@ -20,6 +20,7 @@ body {
 header {
   background: var(--lightblack);
   animation: nav-bar-load 0.6s linear;
+  width: 100%;
 }
 
 .navbar li {
@@ -41,6 +42,7 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 0 24px;
+  position: sticky;
 }
 
 .nav-group {
@@ -251,6 +253,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  header {
+    width: 100%;
+    position: fixed;
+  }
   .hamburger {
     display: block;
   }
@@ -294,7 +300,7 @@ footer {
 
   .nav-group.active {
     right: 0;
-    /* top: 70px; */
+
     opacity: 1;
   }
   .content .intro h1 {
