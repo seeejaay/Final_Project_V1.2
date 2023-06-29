@@ -84,9 +84,7 @@ header {
 .line-2 {
   width: 20px;
 }
-.line-3 {
-  width: 10px;
-}
+
 .container {
   display: flex;
   justify-content: center;
@@ -269,7 +267,6 @@ footer {
 
   .hamburger.active .line:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-    width: 25px;
   }
   .navbar {
     justify-content: space-between;
