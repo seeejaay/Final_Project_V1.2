@@ -255,6 +255,8 @@ footer {
 @media (max-width: 768px) {
   header {
     width: 100%;
+  }
+  nav {
     position: fixed;
   }
   .hamburger {
@@ -277,12 +279,12 @@ footer {
   }
   .navbar {
     justify-content: space-between;
-    position: fixed;
   }
   .bx {
     font-size: 50px;
   }
   .nav-group {
+    position: fixed;
     right: -100%;
     top: 70px;
     gap: 0;
