@@ -256,9 +256,6 @@ footer {
   header {
     width: 100%;
   }
-  nav {
-    position: fixed;
-  }
   .hamburger {
     display: block;
   }
@@ -279,6 +276,7 @@ footer {
   }
   .navbar {
     justify-content: space-between;
+    position: fixed;
   }
   .bx {
     font-size: 50px;
