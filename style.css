@@ -276,6 +276,7 @@ footer {
   }
   .navbar {
     justify-content: space-between;
+    width: 100%;
     position: fixed;
   }
   .bx {
