@@ -277,12 +277,12 @@ footer {
   }
   .navbar {
     justify-content: space-between;
+    position: fixed;
   }
   .bx {
     font-size: 50px;
   }
   .nav-group {
-    position: fixed;
     right: -100%;
     top: 70px;
     gap: 0;
