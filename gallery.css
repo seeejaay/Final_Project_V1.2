@@ -14,15 +14,22 @@
   scroll-behavior: smooth;
 }
 
+.container {
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  animation: content-load 0.6s ease-in;
+}
 .grid {
   width: 80%;
-  margin: 100px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 30px;
-  animation: content-load 0.6s ease-in;
 }
-.label {
+.container .label {
+  margin-top: 120px !important;
   margin: 30px auto;
 }
 .label h3 {
@@ -34,7 +41,7 @@
   transition: 0.5s ease;
   animation: content-load 0.6s ease-in;
 }
-.grid img {
+.container img {
   width: 100%;
   height: 400px;
   border-radius: 30px;
