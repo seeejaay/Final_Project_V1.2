@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  --lightblack: #232528;
+  --aliceblue: #e4effc;
+  --yellow: #ffa600;
+  --bluewish: #0d59ff;
+  --gray: #c9c9c9;
+  scrollbar-color: var(--lightblack) var(--gray);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--gray);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content .credit-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.credit-title h3 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: var(--bluewish);
+  transition: 0.6s ease;
+}
+
+.sub-header {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: content-load 0.6s ease-in;
+  flex-direction: column;
+}
+.sub-header h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: var(--lightblack);
+  transition: 0.6s ease;
+  margin: 20px 0;
+}
+
+.sub-header h5 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: var(--bluewish);
+  transition: 0.6s ease;
+  margin: 20px 0;
+  text-align: center;
+}
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-group button {
+  width: 180px;
+  height: 60px;
+  background: var(--bluewish);
+  color: var(--gray);
+  margin: 20px 20px;
+  font-size: 20px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 30px;
+  transition: 0.6s ease;
+}
+
+.btn-group button:hover {
+  background: var(--yellow);
+  color: var(--lightblack);
+  box-shadow: 0px 1px 10px 1px #232528;
+}
+
+@media (max-width: 768px) {
+  .btn-group {
+    flex-direction: column;
+  }
+  .credit-title h3 {
+    font-size: 3rem;
+  }
+  .sub-header h3 {
+    font-size: 1.5rem;
+  }
+  .sub-header h5 {
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes content-load {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
