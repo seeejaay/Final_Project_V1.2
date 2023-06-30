@@ -44,7 +44,7 @@ body {
   transition: 0.6s ease;
 }
 .sub-header {
-  margin-top: 50px;
+  margin: 50px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +81,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60%;
+
+  width: 80%;
 }
 .card {
   width: 80%;
@@ -93,7 +94,7 @@ body {
   transition: 0.6s ease;
 }
 .card-1 {
-  width: 100% !important;
+  width: 80% !important;
   height: 600px !important;
 }
 .card-image iframe,
@@ -169,7 +170,18 @@ body {
     font-size: 20px;
   }
   .card {
-    width: 80%;
+    width: 90%;
+  }
+  .card-1 {
+    width: 90% !important;
+  }
+  .card-center,
+  .card-center-1 {
+    width: 100%;
+  }
+  .card-group,
+  .card-group-1 {
+    width: 100% !important;
   }
 }
 

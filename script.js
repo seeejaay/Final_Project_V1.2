@@ -44,6 +44,10 @@ const openContact = () => {
   console.log("Opened Contacts: " + openC);
 };
 
+const openCredits = () => {
+  let openC = window.open("credits.html", "_self");
+  console.log("Opened Credits: " + openC);
+};
 const openLinked = () => {
   let openL = window.open(
     "https://www.linkedin.com/in/carl-justine-malabanan-2a868723a/",
